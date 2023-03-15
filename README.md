@@ -1,7 +1,9 @@
 # Machine Learning Basic
 <details>
   <summary><b> What is batch_size?</b></summary>
-    - Batch size refers to the number of samples or data points that a machine learning algorithm uses in one iteration or training step. In other words, it determines how many examples are processed at once by the algorithm during training. For instance, if a dataset contains 1000 training examples, and the batch size is set to 32, the algorithm would take 32 examples at a time and update the weights of the model accordingly. The process of updating the weights after processing each batch of data is called stochastic gradient descent (SGD).The batch size can affect the accuracy and speed of the training process. A larger batch size can speed up the training process, but it can also cause the model to generalize poorly. A smaller batch size can lead to slower training times but may improve the accuracy of the model. Choosing the appropriate batch size is a trade-off between these factors and depends on the specific problem being addressed.
+  
+  
+  - Batch size refers to the number of samples or data points that a machine learning algorithm uses in one iteration or training step. In other words, it determines how many examples are processed at once by the algorithm during training. For instance, if a dataset contains 1000 training examples, and the batch size is set to 32, the algorithm would take 32 examples at a time and update the weights of the model accordingly. The process of updating the weights after processing each batch of data is called stochastic gradient descent (SGD).The batch size can affect the accuracy and speed of the training process. A larger batch size can speed up the training process, but it can also cause the model to generalize poorly. A smaller batch size can lead to slower training times but may improve the accuracy of the model. Choosing the appropriate batch size is a trade-off between these factors and depends on the specific problem being addressed.
 </details>
 
 <details>
@@ -50,5 +52,34 @@ The choice of class_mode depends on the type of problem you are trying to solve 
    - <b>Convolutional Layer:</b> A convolutional layer is a type of layer used in convolutional neural networks (CNNs) that applies a set of filters to the input data to extract features from it. This layer is commonly used in image and video processing tasks.
    
    - <b>Dropout Layer:</b> A dropout layer is a regularization technique that randomly drops out a percentage of neurons in the previous layer during training. This helps prevent overfitting and improves the generalization of the model.
+</details>
+
+<details>
+  <summary><b> What is kernel_size?</b></summary>
+  
+  
+  - A kernel refers to a small matrix of weights that is used to extract features from an input image or signal. The kernel slides over the input data, performing a dot product at each position, which generates a new output feature map.
+  - The kernel size, also known as the filter size, determines the size of the receptive field of the convolutional neural network (CNN) layer. The receptive field refers to the area of the input data that is taken into account by the kernel during the convolution operation.
+  - The kernel size is typically set as a hyperparameter of the CNN and is usually a square matrix, with the most common sizes being 3x3, 5x5, and 7x7. The choice of kernel size depends on the specific task and the characteristics of the input data. Smaller kernel sizes are used to capture local features, while larger kernel sizes can capture more global features.
+</details>
+
+
+<details>
+  <summary><b> What is pool_size?</b></summary>
+  
+  
+  - In deep learning, pooling refers to a downsampling operation that reduces the spatial size (width and height) of the input feature map while retaining important features. Pooling is often used after convolutional layers in a convolutional neural network (CNN) to reduce the size of the feature maps and to help control overfitting.
+  - The pool size, also known as the pooling kernel size, determines the size of the pooling window that slides over the input feature map. The most common pool size is 2x2, although other sizes such as 3x3 or 4x4 can also be used.
+  - During the pooling operation, the pool window slides over the feature map and performs an operation such as maximum or average pooling, which takes the maximum or average value of the pixels in the window, respectively. This reduces the size of the feature map while retaining the most important information.
+</details>
+
+<details>
+  <summary><b> What is Flatten Layer?</b></summary>
+  
+  
+  - In deep learning, a flatten layer is a type of layer that transforms a multi-dimensional input tensor into a one-dimensional vector. This is often done in preparation for passing the data through a fully connected neural network layer.
+  - The flatten layer takes the input tensor, which can have multiple dimensions such as height, width, and depth (or channels), and rearranges it into a one-dimensional vector by concatenating all the elements of the input tensor in a single row. The resulting vector has a length equal to the product of the original tensor dimensions.
+  - The purpose of the flatten layer is to convert the feature map generated by the convolutional layers into a format that can be processed by a fully connected layer, which requires a one-dimensional input vector. By flattening the feature map, the spatial relationships between the input pixels are lost, but the features extracted from the image are retained.
+  - The flatten layer is typically used in the later stages of a convolutional neural network (CNN), after one or more convolutional and pooling layers. The output of the flatten layer is then passed to one or more fully connected layers, which can perform classification or regression tasks.
 </details>
 
