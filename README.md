@@ -109,7 +109,46 @@ The choice of class_mode depends on the type of problem you are trying to solve 
 
 </details>
 
+<details>
+  <summary><b> What is Padding?</b></summary>
+  Padding is a technique used in convolutional neural networks to preserve the spatial dimensions of the input image after convolution, by adding zeros around the input image before convolution. This is done to ensure that the output of the convolution operation has the same shape as the input image, which is important for building deeper networks that can extract complex features from larger images.
+  
+  
+  - <strong>Padding- Same: </strong>Which means that we added just enough padding to the input image so that the output feature map has the same spatial dimensions as the input image. 
+  - <strong>Padding- Valid: </strong>Which means that no padding is added to the input image and the output feature map is smaller than the input image. In this case, the padding added to each side of the input image would be 0.
 
+</details>
+
+<details>
+  <summary><b> What is Stride?</b></summary>
+  
+  
+  - Stride is a parameter used in convolutional neural networks to control the amount of sliding that the convolutional kernel moves across the input image. It determines the number of pixels that the kernel shifts at a time 
+  - <strong>Strides=1,</strong> which means that the convolutional kernel moves one pixel at a time in both the horizontal and vertical directions. This is the default stride value, and it is commonly used in many convolutional neural networks.
+  - However, it is possible to set the stride to a value greater than 1, which means that the kernel skips pixels during the convolution operation. 
+  - For example, if the stride is set to 2, the kernel would move two pixels at a time, effectively reducing the spatial dimensions of the output feature map by a factor of 2.
+  - Increasing the stride can have the effect of reducing the computational cost of the convolutional operation and can help prevent overfitting. However, it also reduces the amount of spatial information in the output feature map, which may lead to a loss of performance in some applications.
+
+</details>
+
+<details>
+  <summary><b> What is input shape?</b></summary>
+  
+  
+  - In convolutional neural networks, the input shape typically refers to the size of the input image or volume, including the number of channels.
+  - For example, in the Conv2D layer that I provided earlier as an example, the input_shape parameter was set to (32, 32, 3), which means that the input images are 32x32 pixels in size and have 3 color channels (red, green, and blue). This input shape is appropriate for many computer vision tasks, including image classification, object detection, and segmentation.
+
+</details>
+
+<details>
+  <summary><b> What is Dense Layer?</b></summary>
+  
+  
+  - The Dense layer is a type of neural network layer commonly used in deep learning models for a variety of tasks, such as image classification, language processing, and time series analysis. The Dense layer is a fully connected layer, meaning that each neuron in the layer is connected to every neuron in the previous layer.
+  - The Dense layer takes as input a matrix of activations from the previous layer, and applies a linear transformation followed by a non-linear activation function to produce a new matrix of activations. The linear transformation involves computing a dot product between the input matrix and a weight matrix, and adding a bias vector to the result. The activation function is then applied element-wise to the resulting matrix.
+  - Example: <code>model.add(Dense(128, activation='relu'))</code> here adding a Dense layer with 128 neurons and ReLU activation function.
+
+</details>
 
 
 
