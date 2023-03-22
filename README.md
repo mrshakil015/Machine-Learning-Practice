@@ -83,3 +83,33 @@ The choice of class_mode depends on the type of problem you are trying to solve 
   - The flatten layer is typically used in the later stages of a convolutional neural network (CNN), after one or more convolutional and pooling layers. The output of the flatten layer is then passed to one or more fully connected layers, which can perform classification or regression tasks.
 </details>
 
+<details>
+  <summary><b> What is Filter?</b></summary>
+  
+  
+  - The term "filters" refers to the number of convolutional kernels that are applied to the input image. Each filter is a small matrix of weights that slides over the input image and performs element-wise multiplication and summation to produce a single output value in the output feature map.
+  - Suppose, we defined a Conv2D layer with 32 filters. This means that 32 separate convolutional kernels are applied to the input image, each producing a separate output feature map. The output feature maps are then stacked together to form the output volume of the Conv2D layer.
+  - Filter
+    | 1 | 0 | 1 |
+    | - | - | - |
+    | 0 | 1 | 0 |
+    | 1 | 0 | 1 |
+    
+</details>
+
+<details>
+  <summary><b> What is Activation Function?</b></summary>
+  An activation function is a non-linear function that is applied to the output of a neural network layer to introduce non-linearity into the model. It allows the neural network to learn complex, non-linear relationships between the input and output, which would be impossible with a linear model.
+  
+  
+  - <strong>ReLU: </strong>which is one of the most commonly used activation functions in deep learning. The ReLU function applies the element-wise function <code>f(x) = max(0, x)</code> to the output of the previous layer. In other words, it sets all negative values in the output to zero and leaves all positive values unchanged. This has the effect of introducing non-linearity into the model and can help prevent the vanishing gradient problem during training.
+  - <strong>Sigmoid: </strong><code>f(x) = 1 / (1 + exp(-x))</code>, which squashes the output to a range between 0 and 1 and is often used in binary classification problems.
+  - <strong>Softmax: </strong><code>f(x_i) = exp(x_i) / sum(exp(x_j))</code>, which converts the output of the previous layer to a probability distribution over a set of mutually exclusive classes and is often used as the final activation function in classification problems.
+  - <strong>Tanh: </strong>f(x) = (exp(x) - exp(-x)) / (exp(x) + exp(-x)), which squashes the output to a range between -1 and 1 and is often used in multi-class classification problems.
+
+</details>
+
+
+
+
+
