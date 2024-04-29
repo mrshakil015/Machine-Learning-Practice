@@ -1,4 +1,46 @@
 # Machine Learning Basic
+
+<details>
+<summary><b>Evaluation Metrics</b></summary>
+Evaluation metrics are essential tools in machine learning for assessing the performance of models. They quantify how well a model is performing its task, whether it's classification, regression, clustering, or any other type of machine learning problem. 
+
+$a = \frac{b}{c}$
+### Classificartion Metrics:
+1. <b>`Accuracy:`</b> The ratio of correctly predicted instances to the total instances in the dataset.</br>
+<b>Formula:</b></br>
+$Accuracy = \frac{Number of Correct Predictions
+​}{Total Number of Predictions}$
+
+    <b>Example:</b>
+    Suppose a model correctly predicts 850 out of 1000 instances. Then the accuracy would be:
+
+    $Accuracy = \frac{850}{1000} = 0.85$
+2. <b>`Precision: `</b>Precision is the ratio of correctly predicted positive observations to the total predicted positives. It focuses on the accuracy of positive predictions.
+
+    <b>Formula:</b></br>
+    $Precision = \frac{True Positives}{True Positives + False Positives}$
+
+    <b>Example:</b> If a model correctly identifies 120 instances as positive, out of which 100 are actually positive and 20 are false positives, then precision would be:
+
+    $Precision = \frac{100}{100 + 20} = \frac{100}{120} ≈0.83$
+
+3. <b>`Recall:`</b> The ratio of correctly predicted positive observations to all actual positives in the dataset. It measures the ability of the model to capture all positive instances.
+
+    <b>Formula:</b></br>
+    $Recall = \frac{True Positives}{True Positives + False Negatives}$
+
+    <b>Example:</b></br>
+    Consider a model that correctly identifies 120 instances as positive, out of which 100 are actually positive and 20 are false negatives. Then the recall would be:
+
+    $Recall = \frac{100}{100 + 20} = \frac{100}{120} ≈ 0.83$
+
+​
+
+
+
+
+</details>
+
 <details>
   <summary><b> What is batch_size?</b></summary>
   
