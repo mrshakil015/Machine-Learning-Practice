@@ -5,7 +5,7 @@
 Evaluation metrics are essential tools in machine learning for assessing the performance of models. They quantify how well a model is performing its task, whether it's classification, regression, clustering, or any other type of machine learning problem. 
 
 $a = \frac{b}{c}$
-### Classificartion Metrics:
+### Classification Metrics:
 1. <b>`Accuracy:`</b> The ratio of correctly predicted instances to the total instances in the dataset.</br>
 <b>Formula:</b></br>
 $Accuracy = \frac{Number of Correct Predictions
@@ -34,8 +34,32 @@ $Accuracy = \frac{Number of Correct Predictions
 
     $Recall = \frac{100}{100 + 20} = \frac{100}{120} ≈ 0.83$
 
-​
+4. <b>`​F1 Score:`</b> The F1-score is a measure of a model’s performance that combines precision and recall. It is defined as the harmonic mean of precision and recall and is useful when the classes are imbalanced where the best value is 1 and the worst value is 0.
 
+    <b>Formula:</b></br>
+    $F1 Score = 2 × \frac{Precision × Recall}{Precision + Recall}$
+
+    <b>Example:</b>
+    Using the above precision and recall values, we can calculate the F1 score as follows:
+
+    $F1 Score = 2 × \frac{0.83 × 0.83}{0.83 + 0.83}≈0.83$
+
+5. <b>`ROC Curve (Receiver Operating Characteristic Curve):`</b> A graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. It plots the true positive rate against the false positive rate at various threshold settings.
+
+6. <b>`AUC-ROC (Area Under the ROC Curve):`</b> The area under the ROC curve. AUC-ROC provides an aggregate measure of performance across all possible classification thresholds. It is especially useful for imbalanced datasets.
+
+7. <b>`Confusion Matrix:`</b> A confusion matrix is a matrix that summarizes the performance of a machine learning model on a set of test data. It is a means of displaying the number of accurate and inaccurate instances based on the model’s predictions. It is often used to measure the performance of classification models, which aim to predict a categorical label for each input instance.
+
+|           | Predicted Dog           | Predicted Not Dog       |
+|-----------|-------------------------|-------------------------|
+| Actual Dog    | True Positive (TP)          | False Negative (FN)         |
+| Actual Not Dog| False Positive (FP)         | True Negative (TN)          |
+
+
++ <b>True positives (TP):</b> occur when the model accurately predicts a positive data point.
++ <b>True negatives (TN):</b> occur when the model accurately predicts a negative data point.
++ <b>False positives (FP):</b> occur when the model predicts a positive data point incorrectly.
++ <b>False negatives (FN):</b> occur when the model mispredicts a negative data point.
 
 
 
