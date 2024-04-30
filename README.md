@@ -50,16 +50,21 @@ $Accuracy = \frac{Number of Correct Predictions
 
 7. <b>`Confusion Matrix:`</b> A confusion matrix is a matrix that summarizes the performance of a machine learning model on a set of test data. It is a means of displaying the number of accurate and inaccurate instances based on the model’s predictions. It is often used to measure the performance of classification models, which aim to predict a categorical label for each input instance.
 
-|           | Predicted Dog           | Predicted Not Dog       |
-|-----------|-------------------------|-------------------------|
-| Actual Dog    | True Positive (TP)          | False Negative (FN)         |
-| Actual Not Dog| False Positive (FP)         | True Negative (TN)          |
+    |           | Predicted Dog           | Predicted Not Dog       |
+    |-----------|-------------------------|-------------------------|
+    | Actual Dog    | True Positive (TP)          | False Negative (FN)         |
+    | Actual Not Dog| False Positive (FP)         | True Negative (TN)          |
 
 
-+ <b>True positives (TP):</b> occur when the model accurately predicts a positive data point.
-+ <b>True negatives (TN):</b> occur when the model accurately predicts a negative data point.
-+ <b>False positives (FP):</b> occur when the model predicts a positive data point incorrectly.
-+ <b>False negatives (FN):</b> occur when the model mispredicts a negative data point.
+    + <b>True positives (TP):</b> occur when the model accurately predicts a positive data point.
+    + <b>True negatives (TN):</b> occur when the model accurately predicts a negative data point.
+    + <b>False positives (FP):</b> occur when the model predicts a positive data point incorrectly.
+    + <b>False negatives (FN):</b> occur when the model mispredicts a negative data point.
+
+### Regression Metrics:
+
+1. <b>Mean Absolute Error (MAE):</b> Mean Absolute Error (MAE) is calculated by taking the summation of the absolute difference between the actual and calculated values of each observation over the entire array and then dividing the sum obtained by the number of observations in the array.
+2.
 
 
 
